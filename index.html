@@ -6,58 +6,45 @@
   <title>Negaye Fikadu | Odoo Expert</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --primary:   #714B67;
-      --accent:    #00A09D;
-      --dark:      #1F1F2E;
-      --light:     #F8F8FC;
-      --text:      #2E2E3A;
-      --muted:     #6B6B80;
-      --card-bg:   #FFFFFF;
-      --border:    #E4E4F0;
-      --radius:    12px;
-      --shadow:    0 4px 24px rgba(113,75,103,0.10);
-      --transition: 0.3s ease;
+      --primary: #714B67;
+      --accent:  #00A09D;
+      --dark:    #1F1F2E;
+      --light:   #F8F8FC;
+      --text:    #2E2E3A;
+      --muted:   #6B6B80;
+      --card-bg: #FFFFFF;
+      --border:  #E4E4F0;
+      --radius:  12px;
+      --shadow:  0 4px 24px rgba(113,75,103,0.10);
+      --trans:   0.3s ease;
     }
-
     html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      background: var(--light);
-      color: var(--text);
-      line-height: 1.65;
-    }
-
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--light); color: var(--text); line-height: 1.65; }
     ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: var(--light); }
     ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
 
-    /* ─── NAV ─── */
+    /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(248,248,252,0.95);
-      backdrop-filter: blur(12px);
+      background: rgba(248,248,252,0.96); backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 6%;
-      height: 64px;
+      padding: 0 6%; height: 64px;
     }
-    .nav-logo { font-size: 1.2rem; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; text-decoration: none; }
+    .nav-logo { font-size: 1.2rem; font-weight: 700; color: var(--primary); text-decoration: none; }
     .nav-logo span { color: var(--accent); }
     .nav-links { display: flex; gap: 32px; list-style: none; }
-    .nav-links a { text-decoration: none; color: var(--text); font-size: 0.92rem; font-weight: 500; transition: color var(--transition); }
+    .nav-links a { text-decoration: none; color: var(--text); font-size: 0.92rem; font-weight: 500; transition: color var(--trans); }
     .nav-links a:hover { color: var(--primary); }
-    .nav-cta { background: var(--primary); color: #fff !important; padding: 8px 20px; border-radius: 8px; transition: background var(--transition) !important; }
+    .nav-cta { background: var(--primary); color: #fff !important; padding: 8px 20px; border-radius: 8px; transition: background var(--trans) !important; }
     .nav-cta:hover { background: var(--accent) !important; }
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; border: none; background: none; }
     .hamburger span { width: 24px; height: 2px; background: var(--text); border-radius: 2px; }
 
-    /* ─── HERO ─── */
+    /* ── HERO ── */
     #hero {
-      min-height: 100vh;
-      display: flex; align-items: center;
+      min-height: 100vh; display: flex; align-items: center;
       padding: 100px 6% 60px;
       background: linear-gradient(135deg, #fff 60%, #f0eaf4 100%);
       position: relative; overflow: hidden;
@@ -74,39 +61,26 @@
       background: radial-gradient(circle, rgba(0,160,157,0.10) 0%, transparent 70%);
       pointer-events: none;
     }
-    .hero-inner {
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 48px; max-width: 1200px; margin: 0 auto; width: 100%;
-    }
+    .hero-inner { display: flex; align-items: center; justify-content: space-between; gap: 48px; max-width: 1200px; margin: 0 auto; width: 100%; }
     .hero-text { flex: 1; max-width: 580px; }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(113,75,103,0.10); color: var(--primary);
       font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px;
-      padding: 5px 14px; border-radius: 20px; margin-bottom: 20px;
-      text-transform: uppercase;
+      padding: 5px 14px; border-radius: 20px; margin-bottom: 20px; text-transform: uppercase;
     }
     .hero-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 3.4rem);
-      font-weight: 800; line-height: 1.15;
-      color: var(--dark); margin-bottom: 16px; letter-spacing: -1px;
-    }
-    h1 .highlight { color: var(--primary); }
-    h1 .accent-txt { color: var(--accent); }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800; line-height: 1.15; color: var(--dark); margin-bottom: 16px; letter-spacing: -1px; }
+    h1 .hi { color: var(--primary); }
+    h1 .ac { color: var(--accent); }
     .hero-sub { font-size: 1.08rem; color: var(--muted); margin-bottom: 36px; max-width: 480px; }
     .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-    .btn {
-      display: inline-block; padding: 13px 28px; border-radius: 9px;
-      font-weight: 600; font-size: 0.95rem; text-decoration: none;
-      transition: all var(--transition); cursor: pointer; border: none;
-    }
-    .btn-primary { background: var(--primary); color: #fff; }
-    .btn-primary:hover { background: #5a3a53; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(113,75,103,0.3); }
-    .btn-outline { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
-    .btn-outline:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
+    .btn { display: inline-block; padding: 13px 28px; border-radius: 9px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: all var(--trans); cursor: pointer; border: none; }
+    .btn-p { background: var(--primary); color: #fff; }
+    .btn-p:hover { background: #5a3a53; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(113,75,103,0.3); }
+    .btn-o { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
+    .btn-o:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
     .hero-stats { display: flex; gap: 32px; margin-top: 48px; flex-wrap: wrap; }
-    .stat { text-align: left; }
     .stat-num { font-size: 1.9rem; font-weight: 800; color: var(--primary); line-height: 1; }
     .stat-label { font-size: 0.8rem; color: var(--muted); margin-top: 3px; }
 
@@ -131,148 +105,110 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.10);
       display: flex; align-items: center; gap: 6px; white-space: nowrap;
     }
-    .float-badge .dot { width: 8px; height: 8px; border-radius: 50%; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
     .fb-1 { top: 20px; right: -20px; }
     .fb-2 { bottom: 30px; left: -30px; }
     .fb-3 { top: 50%; right: -40px; transform: translateY(-50%); }
 
-    /* ─── SECTIONS ─── */
+    /* ── SECTIONS ── */
     section { padding: 88px 6%; }
-    .section-tag {
-      display: inline-block;
-      background: rgba(113,75,103,0.08); color: var(--primary);
-      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 1px; padding: 4px 14px; border-radius: 20px; margin-bottom: 12px;
-    }
-    .section-title { font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 800; color: var(--dark); letter-spacing: -0.5px; margin-bottom: 10px; }
-    .section-sub { font-size: 1rem; color: var(--muted); max-width: 520px; margin-bottom: 52px; }
-    .section-header { text-align: center; }
-    .section-header .section-sub { margin-left: auto; margin-right: auto; }
+    .sec-tag { display: inline-block; background: rgba(113,75,103,0.08); color: var(--primary); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 4px 14px; border-radius: 20px; margin-bottom: 12px; }
+    .sec-title { font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 800; color: var(--dark); letter-spacing: -0.5px; margin-bottom: 10px; }
+    .sec-sub { font-size: 1rem; color: var(--muted); max-width: 520px; margin-bottom: 52px; }
+    .sec-hdr { text-align: center; }
+    .sec-hdr .sec-sub { margin-left: auto; margin-right: auto; }
 
-    /* ─── SERVICES ─── */
+    /* ── SERVICES ── */
     #services { background: #fff; }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px; max-width: 1100px; margin: 0 auto;
-    }
-    .service-card {
-      background: var(--light); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 32px 28px;
-      transition: all var(--transition); position: relative; overflow: hidden;
-    }
-    .service-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-      background: linear-gradient(90deg, var(--primary), var(--accent));
-      transform: scaleX(0); transform-origin: left; transition: transform var(--transition);
-    }
-    .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: transparent; }
-    .service-card:hover::before { transform: scaleX(1); }
-    .svc-icon { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 18px; }
-    .svc-purple { background: rgba(113,75,103,0.12); }
-    .svc-teal   { background: rgba(0,160,157,0.12); }
-    .svc-blue   { background: rgba(70,130,180,0.12); }
-    .svc-orange { background: rgba(230,126,34,0.12); }
-    .service-card h3 { font-size: 1.08rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
-    .service-card p  { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
-    .svc-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
-    .svc-tag { font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; background: var(--border); color: var(--muted); }
+    .svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
+    .svc-card { background: var(--light); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 28px; transition: all var(--trans); position: relative; overflow: hidden; }
+    .svc-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); transform: scaleX(0); transform-origin: left; transition: transform var(--trans); }
+    .svc-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: transparent; }
+    .svc-card:hover::before { transform: scaleX(1); }
+    .svc-ico { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 18px; }
+    .ic-pu { background: rgba(113,75,103,0.12); }
+    .ic-te { background: rgba(0,160,157,0.12); }
+    .ic-bl { background: rgba(70,130,180,0.12); }
+    .ic-or { background: rgba(230,126,34,0.12); }
+    .svc-card h3 { font-size: 1.08rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+    .svc-card p  { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+    .tag { font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; background: var(--border); color: var(--muted); }
 
-    /* ─── APPS ─── */
-    #apps { background: var(--light); }
-    .apps-grid { display: grid; gap: 24px; max-width: 1100px; margin: 0 auto; }
-    .app-card {
-      background: var(--card-bg); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 28px;
-      display: flex; flex-direction: column;
-      transition: all var(--transition); box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    }
-    .app-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: rgba(113,75,103,0.20); }
-    .app-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
-    .app-icon {
-      width: 52px; height: 52px; border-radius: 12px; flex-shrink: 0;
-      display: flex; align-items: center; justify-content: center; font-size: 1.5rem;
-      background: linear-gradient(135deg, var(--primary), var(--accent)); color: #fff;
-    }
-    .app-meta h3 { font-size: 1rem; font-weight: 700; color: var(--dark); }
-    .app-meta .ver { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
-    .app-card p { font-size: 0.88rem; color: var(--muted); flex: 1; line-height: 1.6; }
-    .app-card ul { margin: 12px 0 0 0; padding-left: 18px; font-size: 0.87rem; color: var(--muted); line-height: 1.9; }
-    .app-footer {
-      display: flex; align-items: center; justify-content: space-between;
-      margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border);
-    }
-    .app-badge { font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; background: rgba(0,160,157,0.12); color: var(--accent); }
-    .app-link {
-      font-size: 0.82rem; font-weight: 600; color: var(--primary); text-decoration: none;
-      display: flex; align-items: center; gap: 4px; transition: gap var(--transition);
-    }
-    .app-link:hover { gap: 8px; }
-    .app-link::after { content: '→'; }
-
-    /* ─── APP STORE BANNER ─── */
-    .odoo-banner {
-      background: linear-gradient(120deg, var(--primary) 0%, #8e5f80 50%, var(--accent) 100%);
-      color: #fff; padding: 60px 6%; text-align: center;
-    }
+    /* ── BANNER ── */
+    .odoo-banner { background: linear-gradient(120deg, var(--primary) 0%, #8e5f80 50%, var(--accent) 100%); color: #fff; padding: 60px 6%; text-align: center; }
     .odoo-banner h2 { font-size: 2rem; font-weight: 800; margin-bottom: 10px; }
     .odoo-banner p  { opacity: 0.85; margin-bottom: 28px; font-size: 1rem; }
-    .btn-white {
-      background: #fff; color: var(--primary); padding: 12px 30px; border-radius: 9px;
-      font-weight: 700; font-size: 0.95rem; text-decoration: none;
-      display: inline-block; transition: all var(--transition);
-    }
-    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    .btn-w { background: #fff; color: var(--primary); padding: 12px 30px; border-radius: 9px; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-block; transition: all var(--trans); }
+    .btn-w:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
 
-    /* ─── CONTACT ─── */
+    /* ── APPS ── */
+    #apps { background: var(--light); }
+    .app-card { background: var(--card-bg); border: 2px solid rgba(113,75,103,0.25); border-radius: var(--radius); padding: 28px; display: flex; flex-direction: column; box-shadow: 0 8px 32px rgba(113,75,103,0.12); transition: all var(--trans); max-width: 600px; margin: 0 auto; }
+    .app-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .app-hdr { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+    .app-ico { width: 52px; height: 52px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; background: linear-gradient(135deg, var(--primary), var(--accent)); color: #fff; }
+    .app-meta h3 { font-size: 1rem; font-weight: 700; color: var(--dark); }
+    .app-meta .ver { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+    .app-card > p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+    .app-card ul { margin: 12px 0 0; padding-left: 18px; font-size: 0.87rem; color: var(--muted); line-height: 1.9; }
+    .app-ft { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); }
+    .app-badge { font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; background: rgba(0,160,157,0.12); color: var(--accent); }
+    .app-link { font-size: 0.82rem; font-weight: 600; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 4px; transition: gap var(--trans); }
+    .app-link:hover { gap: 8px; }
+    .app-link::after { content: '\2192'; }
+
+    /* ── CONTACT ── */
     #contact { background: #fff; }
-    .contact-inner {
-      max-width: 980px; margin: 0 auto;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start;
-    }
-    .contact-info h2 { font-size: 2rem; font-weight: 800; color: var(--dark); margin-bottom: 14px; }
-    .contact-info p { color: var(--muted); margin-bottom: 32px; }
-    .contact-item { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }
-    .contact-item:last-child { border-bottom: none; }
-    .ci-icon { width: 42px; height: 42px; border-radius: 10px; flex-shrink: 0; background: rgba(113,75,103,0.10); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
-    .ci-text .ci-label { font-size: 0.75rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-    .ci-text a, .ci-text .ci-val { font-size: 0.9rem; color: var(--dark); font-weight: 500; text-decoration: none; display: block; }
-    .ci-text a:hover { color: var(--primary); }
-    .contact-form { display: flex; flex-direction: column; gap: 16px; }
-    .form-group { display: flex; flex-direction: column; gap: 5px; }
-    .form-group label { font-size: 0.82rem; font-weight: 600; color: var(--text); }
-    .form-group input, .form-group textarea, .form-group select {
+    .con-inner { max-width: 980px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+    .con-info h2 { font-size: 2rem; font-weight: 800; color: var(--dark); margin-bottom: 14px; }
+    .con-info > p { color: var(--muted); margin-bottom: 32px; }
+    .con-item { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .con-item:last-child { border-bottom: none; }
+    .ci-ico { width: 42px; height: 42px; border-radius: 10px; flex-shrink: 0; background: rgba(113,75,103,0.10); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+    .ci-lbl { font-size: 0.75rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; display: block; }
+    .ci-val, .con-item a { font-size: 0.9rem; color: var(--dark); font-weight: 500; text-decoration: none; display: block; }
+    .con-item a:hover { color: var(--primary); }
+
+    /* ── FORM ── */
+    .con-form { display: flex; flex-direction: column; gap: 16px; }
+    .fgrp { display: flex; flex-direction: column; gap: 5px; }
+    .fgrp label { font-size: 0.82rem; font-weight: 600; color: var(--text); }
+    .fgrp input, .fgrp textarea, .fgrp select {
       padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 8px;
       font-size: 0.9rem; font-family: inherit; background: var(--light);
-      color: var(--text); transition: border-color var(--transition); outline: none;
+      color: var(--text); transition: border-color var(--trans); outline: none;
     }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--primary); background: #fff; }
-    .form-group textarea { resize: vertical; min-height: 110px; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .form-submit {
+    .fgrp input:focus, .fgrp textarea:focus, .fgrp select:focus { border-color: var(--primary); background: #fff; }
+    .fgrp textarea { resize: vertical; min-height: 110px; }
+    .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .fsub {
       background: var(--primary); color: #fff; border: none; border-radius: 9px;
       padding: 13px 28px; font-size: 0.95rem; font-weight: 600;
-      cursor: pointer; transition: all var(--transition);
+      cursor: pointer; transition: all var(--trans);
       display: flex; align-items: center; gap: 8px; justify-content: center;
     }
-    .form-submit:hover { background: var(--accent); transform: translateY(-2px); }
+    .fsub:hover:not(:disabled) { background: var(--accent); transform: translateY(-2px); }
+    .fsub:disabled { opacity: 0.7; cursor: not-allowed; }
 
-    /* ─── FOOTER ─── */
+    /* ── FOOTER ── */
     footer { background: var(--dark); color: rgba(255,255,255,0.6); text-align: center; padding: 32px 6%; font-size: 0.85rem; }
     footer a { color: var(--accent); text-decoration: none; }
-    footer .footer-logo { font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 8px; display: block; }
-    footer .footer-logo span { color: var(--accent); }
+    .f-logo { font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 8px; display: block; }
+    .f-logo span { color: var(--accent); }
 
-    /* ─── TOAST ─── */
+    /* ── TOAST ── */
     #toast {
       display: none; position: fixed; bottom: 28px; right: 28px; z-index: 999;
-      background: var(--dark); color: #fff; padding: 14px 22px; border-radius: 10px;
-      font-size: 0.9rem; box-shadow: var(--shadow); align-items: center; gap: 10px;
+      color: #fff; padding: 14px 22px; border-radius: 10px;
+      font-size: 0.9rem; box-shadow: var(--shadow);
+      align-items: center; gap: 10px; background: var(--dark);
+      transition: background 0.3s;
     }
     #toast.show { display: flex; }
-    #toast::before { content: '✓'; color: var(--accent); font-weight: 700; font-size: 1.1rem; }
+    #toast::before { content: '\2713'; font-weight: 700; font-size: 1.1rem; color: var(--accent); }
 
-    /* ─── RESPONSIVE ─── */
+    /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero-inner { flex-direction: column; text-align: center; }
       .hero-text { max-width: 100%; }
@@ -280,7 +216,7 @@
       .hero-btns { justify-content: center; }
       .hero-stats { justify-content: center; }
       .hero-visual { order: -1; flex: none; }
-      .contact-inner { grid-template-columns: 1fr; }
+      .con-inner { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
       nav { padding: 0 5%; }
@@ -288,7 +224,7 @@
       .nav-links.open { display: flex; }
       .hamburger { display: flex; }
       section { padding: 64px 5%; }
-      .form-row { grid-template-columns: 1fr; }
+      .frow { grid-template-columns: 1fr; }
       .float-badge { display: none; }
     }
   </style>
@@ -315,16 +251,16 @@
     <div class="hero-text">
       <div class="hero-badge">Odoo Expert</div>
       <h1>
-        Hi, I'm <span class="highlight">Negaye Fikadu</span><br/>
-        Your Odoo <span class="accent-txt">Development</span> &amp; Consulting Partner
+        Hi, I'm <span class="hi">Negaye Fikadu</span><br/>
+        Your Odoo <span class="ac">Development</span> &amp; Consulting Partner
       </h1>
       <p class="hero-sub">
-        I help businesses unlock the full power of Odoo — from custom module development
+        I help businesses unlock the full power of Odoo &mdash; from custom module development
         and App Store publishing to seamless implementation and team training.
       </p>
       <div class="hero-btns">
-        <a href="#apps" class="btn btn-primary">View My App</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="#apps" class="btn btn-p">View My App</a>
+        <a href="#contact" class="btn btn-o">Get In Touch</a>
       </div>
       <div class="hero-stats">
         <div class="stat">
@@ -336,7 +272,7 @@
           <div class="stat-label">App Published</div>
         </div>
         <div class="stat">
-          <div class="stat-num">5★</div>
+          <div class="stat-num">5&#9733;</div>
           <div class="stat-label">Client Rating</div>
         </div>
       </div>
@@ -346,13 +282,13 @@
       <div class="avatar-ring">
         <span class="avatar-initials">NF</span>
         <div class="float-badge fb-1" style="color:#714B67;">
-          <span class="dot" style="background:#714B67;"></span> Odoo v16 · v17
+          <span class="dot" style="background:#714B67;"></span> Odoo v16 &middot; v17
         </div>
         <div class="float-badge fb-2" style="color:#00A09D;">
           <span class="dot" style="background:#00A09D;"></span> App Store Publisher
         </div>
         <div class="float-badge fb-3" style="color:#4682B4;">
-          <span class="dot" style="background:#4682B4;"></span> Python · OWL · JS
+          <span class="dot" style="background:#4682B4;"></span> Python &middot; OWL &middot; JS
         </div>
       </div>
     </div>
@@ -361,68 +297,55 @@
 
 <!-- SERVICES -->
 <section id="services">
-  <div class="section-header">
-    <span class="section-tag">What I Do</span>
-    <h2 class="section-title">Services I Offer</h2>
-    <p class="section-sub">From custom development to full Odoo rollouts — I cover every layer of the Odoo ecosystem.</p>
+  <div class="sec-hdr">
+    <span class="sec-tag">What I Do</span>
+    <h2 class="sec-title">Services I Offer</h2>
+    <p class="sec-sub">From custom development to full Odoo rollouts &mdash; I cover every layer of the Odoo ecosystem.</p>
   </div>
+  <div class="svc-grid">
 
-  <div class="services-grid">
-
-    <div class="service-card">
-      <div class="svc-icon svc-purple">🧩</div>
+    <div class="svc-card">
+      <div class="svc-ico ic-pu">&#129065;</div>
       <h3>Custom Module Development</h3>
       <p>End-to-end Odoo module development tailored to your business workflows. From backend models to OWL front-end components.</p>
-      <div class="svc-tags">
-        <span class="svc-tag">Python</span>
-        <span class="svc-tag">OWL JS</span>
-        <span class="svc-tag">XML/QWeb</span>
-        <span class="svc-tag">PostgreSQL</span>
+      <div class="tag-row">
+        <span class="tag">Python</span><span class="tag">OWL JS</span><span class="tag">XML/QWeb</span><span class="tag">PostgreSQL</span>
       </div>
     </div>
 
-    <div class="service-card">
-      <div class="svc-icon svc-teal">🛒</div>
+    <div class="svc-card">
+      <div class="svc-ico ic-te">&#128722;</div>
       <h3>Odoo App Store Publishing</h3>
-      <p>I build, test, and publish production-ready apps to the official Odoo App Store — packaged for v17 &amp; beyond.</p>
-      <div class="svc-tags">
-        <span class="svc-tag">App Store</span>
-        <span class="svc-tag">Packaging</span>
-        <span class="svc-tag">v17</span>
+      <p>I build, test, and publish production-ready apps to the official Odoo App Store &mdash; packaged for v17 &amp; beyond.</p>
+      <div class="tag-row">
+        <span class="tag">App Store</span><span class="tag">Packaging</span><span class="tag">v17</span>
       </div>
     </div>
 
-    <div class="service-card">
-      <div class="svc-icon svc-blue">🚀</div>
+    <div class="svc-card">
+      <div class="svc-ico ic-bl">&#128640;</div>
       <h3>Odoo Implementation</h3>
-      <p>Full-cycle Odoo deployment — requirements gathering, configuration, data migration, go-live support and post-launch care.</p>
-      <div class="svc-tags">
-        <span class="svc-tag">ERP Setup</span>
-        <span class="svc-tag">Data Migration</span>
-        <span class="svc-tag">Accounting</span>
-        <span class="svc-tag">Inventory</span>
+      <p>Full-cycle Odoo deployment &mdash; requirements gathering, configuration, data migration, go-live support and post-launch care.</p>
+      <div class="tag-row">
+        <span class="tag">ERP Setup</span><span class="tag">Data Migration</span><span class="tag">Accounting</span><span class="tag">Inventory</span>
       </div>
     </div>
 
-    <div class="service-card">
-      <div class="svc-icon svc-orange">📊</div>
+    <div class="svc-card">
+      <div class="svc-ico ic-or">&#128202;</div>
       <h3>Consulting &amp; Training</h3>
       <p>Strategic Odoo consulting to align the platform with your goals, plus hands-on team training to maximize adoption.</p>
-      <div class="svc-tags">
-        <span class="svc-tag">Business Analysis</span>
-        <span class="svc-tag">Workshops</span>
-        <span class="svc-tag">Documentation</span>
+      <div class="tag-row">
+        <span class="tag">Business Analysis</span><span class="tag">Workshops</span><span class="tag">Documentation</span>
       </div>
     </div>
 
-    <div class="service-card">
-      <div class="svc-icon svc-teal">🛠️</div>
+    <div class="svc-card">
+      <div class="svc-ico ic-te">&#128295;</div>
       <h3>Support &amp; Maintenance</h3>
       <p>Ongoing bug fixing, version upgrades, performance optimization, and technical support for existing Odoo instances.</p>
-      <div class="svc-tags">
-        <span class="svc-tag">Bug Fixes</span>
-        <span class="svc-tag">Upgrades</span>
-        <span class="svc-tag">Performance</span>
+      <div class="tag-row">
+        <span class="tag">Bug Fixes</span><span class="tag">Upgrades</span><span class="tag">Performance</span>
       </div>
     </div>
 
@@ -431,106 +354,118 @@
 
 <!-- APP STORE BANNER -->
 <div class="odoo-banner">
-  <h2>🛒 Find My App on the Odoo App Store</h2>
+  <h2>&#128722; Find My App on the Odoo App Store</h2>
   <p>Browse and install my published module directly from the official Odoo marketplace.</p>
-  <a href="https://apps.odoo.com/apps/modules/browse?author=Negaye+Fikadu" target="_blank" rel="noopener" class="btn-white">
-    Visit My App Store Profile →
+  <a href="https://apps.odoo.com/apps/modules/browse?author=Negaye+Fikadu" target="_blank" rel="noopener" class="btn-w">
+    Visit My App Store Profile &rarr;
   </a>
 </div>
 
 <!-- APPS -->
 <section id="apps">
-  <div class="section-header">
-    <span class="section-tag">Portfolio</span>
-    <h2 class="section-title">My Published Odoo App</h2>
-    <p class="section-sub">Crafted with clean code, full documentation, and long-term support.</p>
+  <div class="sec-hdr">
+    <span class="sec-tag">Portfolio</span>
+    <h2 class="sec-title">My Published Odoo App</h2>
+    <p class="sec-sub">Crafted with clean code, full documentation, and long-term support.</p>
   </div>
 
-  <div class="apps-grid" style="grid-template-columns: minmax(300px, 600px); justify-content: center;">
-    <div class="app-card" style="border: 2px solid rgba(113,75,103,0.25); box-shadow: 0 8px 32px rgba(113,75,103,0.12);">
-      <div class="app-header">
-        <div class="app-icon">🕐</div>
-        <div class="app-meta">
-          <h3>Time Off Accrual Expiry</h3>
-          <div class="ver">Odoo v17</div>
-        </div>
+  <div class="app-card">
+    <div class="app-hdr">
+      <div class="app-ico">&#128336;</div>
+      <div class="app-meta">
+        <h3>Time Off Accrual Expiry</h3>
+        <div class="ver">Odoo v17</div>
       </div>
-      <p>
-        Automatically manages the expiry of accrued time-off balances in Odoo.
-        Ensures unused leave allocations are expired according to configurable rules —
-        keeping HR records accurate, compliant, and free of stale balances.
-      </p>
-      <ul>
-        <li>Configurable accrual expiry rules per leave type</li>
-        <li>Automatic expiry cron job with full audit trail</li>
-        <li>Notifies employees &amp; HR managers before expiry</li>
-        <li>Seamlessly compatible with Odoo 17's Time Off module</li>
-      </ul>
-      <div class="app-footer">
-        <span class="app-badge">Time Off / HR</span>
-        <a href="https://apps.odoo.com/apps/modules/browse?author=Negaye+Fikadu" target="_blank" rel="noopener" class="app-link">View on App Store</a>
-      </div>
+    </div>
+    <p>
+      Automatically manages the expiry of accrued time-off balances in Odoo.
+      Ensures unused leave allocations are expired according to configurable rules &mdash;
+      keeping HR records accurate, compliant, and free of stale balances.
+    </p>
+    <ul>
+      <li>Configurable accrual expiry rules per leave type</li>
+      <li>Automatic expiry cron job with full audit trail</li>
+      <li>Notifies employees &amp; HR managers before expiry</li>
+      <li>Seamlessly compatible with Odoo 17's Time Off module</li>
+    </ul>
+    <div class="app-ft">
+      <span class="app-badge">Time Off / HR</span>
+      <a href="https://apps.odoo.com/apps/modules/browse?author=Negaye+Fikadu" target="_blank" rel="noopener" class="app-link">View on App Store</a>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="contact-inner">
-    <div class="contact-info">
-      <span class="section-tag">Contact</span>
+  <div class="con-inner">
+
+    <!-- Left info -->
+    <div class="con-info">
+      <span class="sec-tag">Contact</span>
       <h2>Let's Build Something Great Together</h2>
       <p>Have a project in mind? Need a custom Odoo module or a full implementation? Reach out and I'll get back to you within 24 hours.</p>
 
-      <div class="contact-item">
-        <div class="ci-icon">📧</div>
-        <div class="ci-text">
-          <span class="ci-label">Email</span>
-          <a href="mailto:negaye@example.com">negaye@example.com</a>
+      <div class="con-item">
+        <div class="ci-ico">&#128231;</div>
+        <div>
+          <span class="ci-lbl">Email</span>
+          <a href="/cdn-cgi/l/email-protection#c4aaa1a3a5a2adafa5f5f384a3a9a5ada8eaa7aba9"><span class="__cf_email__" data-cfemail="523c373533343b3933636512353f333b3e7c313d3f">[email&#160;protected]</span></a>
         </div>
       </div>
-      <div class="contact-item">
-        <div class="ci-icon">💼</div>
-        <div class="ci-text">
-          <span class="ci-label">Odoo App Store</span>
-          <a href="https://apps.odoo.com/apps/modules/browse?author=Negaye+Fikadu" target="_blank" rel="noopener">apps.odoo.com — Negaye Fikadu</a>
+
+      <div class="con-item">
+        <div class="ci-ico">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#714B67" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="ci-lbl">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/negaye-fikadu" target="_blank" rel="noopener">linkedin.com/in/negaye-fikadu</a>
         </div>
       </div>
-      <div class="contact-item">
-        <div class="ci-icon">🌍</div>
-        <div class="ci-text">
-          <span class="ci-label">Location</span>
-          <span class="ci-val">Addis Ababa, Ethiopia · Remote Worldwide</span>
+
+      <div class="con-item">
+        <div class="ci-ico">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#714B67" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="ci-lbl">GitHub</span>
+          <a href="https://github.com/negafika" target="_blank" rel="noopener">github.com/negafika</a>
         </div>
       </div>
-      <div class="contact-item">
-        <div class="ci-icon">⏱️</div>
-        <div class="ci-text">
-          <span class="ci-label">Response Time</span>
+
+      <div class="con-item">
+        <div class="ci-ico">&#9201;</div>
+        <div>
+          <span class="ci-lbl">Response Time</span>
           <span class="ci-val">Usually within 24 hours</span>
         </div>
       </div>
     </div>
 
-    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
-      <div class="form-row">
-        <div class="form-group">
+    <!-- Right form — posts to Formspree -->
+    <form class="con-form" id="contactForm" onsubmit="handleSubmit(event)">
+      <div class="frow">
+        <div class="fgrp">
           <label for="fname">First Name</label>
-          <input type="text" id="fname" placeholder="Jane" required />
+          <input type="text" id="fname" name="first_name" placeholder="Jane" required />
         </div>
-        <div class="form-group">
+        <div class="fgrp">
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" placeholder="Doe" required />
+          <input type="text" id="lname" name="last_name" placeholder="Doe" required />
         </div>
       </div>
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="jane@company.com" required />
+      <div class="fgrp">
+        <label for="femail">Email Address</label>
+        <input type="email" id="femail" name="email" placeholder="jane@company.com" required />
       </div>
-      <div class="form-group">
+      <div class="fgrp">
         <label for="service">Service Needed</label>
-        <select id="service">
-          <option value="">Select a service…</option>
+        <select id="service" name="service">
+          <option value="">Select a service&hellip;</option>
           <option>Custom Module Development</option>
           <option>Odoo App Store Module</option>
           <option>Full Odoo Implementation</option>
@@ -539,67 +474,99 @@
           <option>Other</option>
         </select>
       </div>
-      <div class="form-group">
+      <div class="fgrp">
         <label for="message">Project Details</label>
-        <textarea id="message" placeholder="Tell me about your project, timeline, and any specific requirements…" required></textarea>
+        <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and any specific requirements&hellip;" required></textarea>
       </div>
-      <button type="submit" class="form-submit">Send Message ✉️</button>
+      <button type="submit" class="fsub" id="submitBtn">Send Message &#9993;</button>
     </form>
+
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <span class="footer-logo">Negaye<span>.</span></span>
-  <p>Odoo Developer &amp; Consultant · Addis Ababa, Ethiopia</p>
+  <span class="f-logo">Negaye<span>.</span></span>
+  <p>Odoo Developer &amp; Consultant &middot; Addis Ababa, Ethiopia</p>
   <p style="margin-top:8px;">
-    &copy; 2026 Negaye Fikadu · Published on the
+    &copy; 2026 Negaye Fikadu &middot; Published on the
     <a href="https://apps.odoo.com" target="_blank" rel="noopener">Odoo App Store</a>
   </p>
 </footer>
 
-<div id="toast">Message sent successfully!</div>
+<div id="toast"></div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  /* Hamburger */
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('navLinks');
   hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
+  /* Active nav on scroll */
   const sections = document.querySelectorAll('section[id]');
   const navAs    = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) current = s.id; });
+    let cur = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
     navAs.forEach(a => {
       a.style.color = '';
-      if (a.getAttribute('href') === '#' + current) a.style.color = 'var(--primary)';
+      if (a.getAttribute('href') === '#' + cur) a.style.color = 'var(--primary)';
     });
   });
 
-  function handleSubmit(e) {
+  /* Formspree submit */
+  async function handleSubmit(e) {
     e.preventDefault();
+    const form  = e.target;
+    const btn   = document.getElementById('submitBtn');
     const toast = document.getElementById('toast');
+
+    btn.textContent = 'Sending\u2026';
+    btn.disabled = true;
+
+    try {
+      const res = await fetch('https://formspree.io/f/xpqnjwlp', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+
+      if (res.ok) {
+        toast.textContent = '\u2713  Message sent! I\u2019ll get back to you soon.';
+        toast.style.background = '#1a5c3a';
+        form.reset();
+      } else {
+        toast.textContent = '\u26A0  Something went wrong. Please try again.';
+        toast.style.background = '#7a1f1f';
+      }
+    } catch (err) {
+      toast.textContent = '\u26A0  Network error. Please try again.';
+      toast.style.background = '#7a1f1f';
+    }
+
     toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 3500);
-    e.target.reset();
+    btn.textContent = 'Send Message \u2709\uFE0F';
+    btn.disabled = false;
+    setTimeout(() => { toast.classList.remove('show'); toast.style.background = 'var(--dark)'; }, 4500);
   }
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+  /* Fade-in on scroll */
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        en.target.style.opacity = '1';
+        en.target.style.transform = 'translateY(0)';
       }
     });
   }, { threshold: 0.12 });
 
-  document.querySelectorAll('.service-card, .app-card, .contact-item').forEach(el => {
+  document.querySelectorAll('.svc-card, .app-card, .con-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(24px)';
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(el);
+    obs.observe(el);
   });
 </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a00d7bab7ce41bcc',t:'MTc3OTYzODEwOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
