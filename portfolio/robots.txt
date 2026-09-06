@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Replace with your real domain after deployment
-Sitemap: https://example.dev/sitemap.xml
+Sitemap: https://negaye-portfolio.onrender.com/sitemap.xml
