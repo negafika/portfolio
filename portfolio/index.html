@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Negaye Fikadu — I Turn Business Problems Into Practical Systems</title>
+<meta name="description" content="Portfolio of Negaye Fikadu — techno-functional consultant & developer in Addis Ababa. Odoo ERP, Python automation and data-driven solutions.">
+<meta name="theme-color" content="#070a12">
+<!-- Social share cards — replace with your absolute URL after deploy, e.g. https://yoursite.dev/images/og-card.jpg -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Negaye Fikadu — I Turn Business Problems Into Practical Systems">
+<meta property="og:description" content="Techno-functional consultant & developer in Addis Ababa. Odoo ERP, Python automation and data-driven solutions.">
+<meta property="og:image" content="images/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Negaye Fikadu — Systems Problem Solver">
+<meta name="twitter:description" content="Odoo ERP, Python automation and data-driven solutions.">
+<meta name="twitter:image" content="images/og-card.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='13' fill='%23070a12' stroke='%23f2a53a' stroke-width='4'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-size='24' font-weight='900' fill='%23f2a53a' text-anchor='middle'%3ENF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/theme.css?v=26.15">
+<script defer src="js/react/islands.js?v=26.15"></script>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <div class="pre-logo">NF<span class="dot">.</span></div>
+    <div class="pre-bar"><i id="pre-fill"></i></div>
+    <div class="pre-pct" id="pre-pct">0%</div>
+  </div>
+</div>
+
+<div id="progress" aria-hidden="true"></div>
+
+<!-- Header -->
+<header id="site-header">
+  <div class="container">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Negaye Fikadu — home">
+        <svg class="brand-badge" viewBox="0 0 44 44" aria-hidden="true"><rect x="2" y="2" width="40" height="40" rx="10" fill="none" stroke="#f2a53a" stroke-width="2.5"/><text x="22" y="28.5" text-anchor="middle" font-family="Sora,Segoe UI,Arial" font-size="15" font-weight="800" fill="#f2a53a">NF</text></svg>
+        <span><span class="brand-name">NEGAYE <b>FIKADU</b></span><span class="brand-sub">SYSTEMS PROBLEM SOLVER</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a class="nav-link active" data-spy href="#home">Home</a></li>
+          <li><a class="nav-link" data-spy href="#about">About Me</a></li>
+          <li><a class="nav-link" data-spy href="#services">What I Do</a></li>
+          <li><a class="nav-link" data-spy href="#projects">Projects</a></li>
+          <li><a class="nav-link" data-spy href="#notes">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <a class="btn btn-primary btn-sm nav-cta-btn" href="#contact">Let's Talk</a>
+        <button id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="m-menu"><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="m-menu" id="m-menu" aria-hidden="true">
+  <a class="m-link" href="#home" style="transition-delay:.06s"><span class="mono">01</span>Home</a>
+  <a class="m-link" href="#about" style="transition-delay:.12s"><span class="mono">02</span>About Me</a>
+  <a class="m-link" href="#services" style="transition-delay:.18s"><span class="mono">03</span>What I Do</a>
+  <a class="m-link" href="#projects" style="transition-delay:.24s"><span class="mono">04</span>Projects</a>
+  <a class="m-link" href="#notes" style="transition-delay:.30s"><span class="mono">05</span>Blog</a>
+  <a class="m-link" href="#contact" style="transition-delay:.36s"><span class="mono">06</span>Contact</a>
+  <div class="m-menu-foot">
+    <a class="btn btn-primary" href="#contact">Let's Talk</a>
+    <a class="btn btn-ghost" href="Negaye-Fikadu-CV.pdf" download>Download CV</a>
+  </div>
+</div>
+
+<!-- Social rail -->
+<aside class="social-rail" aria-label="Social links">
+  <a href="https://github.com/negafika" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+  <a href="https://www.linkedin.com/in/negaye-fikadu/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=negafika17@gmail.com&su=Portfolio%20inquiry" target="_blank" rel="noopener" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+</aside>
+
+<main>
+
+<!-- ============================ HERO ============================ -->
+<section id="home" class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-grid-bg"></div>
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div id="particles"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <span class="hero-badge"><span class="pulse"></span>Available for remote work — Addis Ababa, ET</span>
+        <h1 class="hero-title">
+          <span class="line"><span>I turn</span></span>
+          <span class="line"><span>business problems</span></span>
+          <span class="line"><span>into <span class="grad-text">practical systems.</span></span></span>
+        </h1>
+        <div class="typer-row">
+          <span class="prompt">&gt;</span>
+          <span class="typer" id="hero-typer" data-words="Odoo Functional Consultant.,Python Developer.,Data-Driven Problem Solver.,Automation Engineer." data-delay="90" data-deleteDelay="1400" data-colors="#f2a53a"></span><span class="cursor" data-cursorDisplay="_" data-owner="hero-typer"></span>
+        </div>
+        <p class="hero-lead">Techno-functional consultant and developer specializing in Odoo ERP, Python automation, and data-driven solutions — bridges the gap between how your business runs and how your systems behave.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary magnetic" href="#projects">View My Work
+            <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a class="btn btn-ghost magnetic" href="#contact">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat"><b class="count-num" data-n="5" data-s="+">5<em>+</em></b><span>Years of experience</span></div>
+          <div class="hstat"><b class="count-num" data-n="40" data-s="+">40<em>+</em></b><span>Professionals trained</span></div>
+          <div class="hstat"><b class="count-num" data-n="1" data-s="">1</b><span>App on the Odoo Store</span></div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="hero-visual orbit-wrap">
+          <!-- animated orbit diagram -->
+          <svg class="orbit-diagram" viewBox="0 0 560 560" role="img" aria-label="Diagram: solving real world problems — understand the business, analyze processes, design solutions, build systems, improve continuously">
+            <circle cx="280" cy="280" r="150" fill="none" stroke="rgba(255,255,255,.05)" stroke-width="1.2"/>
+            <g class="orbit-spin-a">
+              <circle cx="280" cy="280" r="170" fill="none" stroke="rgba(242,165,58,.32)" stroke-width="1.4" stroke-dasharray="1 9"/>
+              <circle cx="280" cy="110" r="3" fill="#f2a53a"/>
+              <circle cx="132.8" cy="365" r="2.2" fill="rgba(242,165,58,.7)"/>
+              <circle cx="450" cy="280" r="2" fill="rgba(242,165,58,.55)"/>
+            </g>
+            <g class="orbit-spin-b">
+              <circle cx="280" cy="280" r="212" fill="none" stroke="rgba(151,160,180,.2)" stroke-width="1.2" stroke-dasharray="1 11"/>
+              <circle cx="280" cy="68" r="2" fill="rgba(151,160,180,.8)"/>
+              <circle cx="492" cy="280" r="2.4" fill="rgba(242,165,58,.85)"/>
+              <circle cx="96" cy="174" r="2" fill="rgba(151,160,180,.6)"/>
+            </g>
+            <circle cx="196" cy="66" r="2" fill="rgba(242,165,58,.5)"/>
+            <circle cx="72" cy="430" r="2" fill="rgba(151,160,180,.5)"/>
+            <circle cx="498" cy="452" r="2.2" fill="rgba(242,165,58,.4)"/>
+            <g stroke="rgba(242,165,58,.42)" stroke-width="1.4">
+              <line x1="280" y1="280" x2="150" y2="140"/>
+              <line x1="280" y1="280" x2="410" y2="140"/>
+              <line x1="280" y1="280" x2="455" y2="285"/>
+              <line x1="280" y1="280" x2="285" y2="460"/>
+              <line x1="280" y1="280" x2="105" y2="285"/>
+            </g>
+            <g fill="#f2a53a">
+              <circle r="2.6"><animateMotion dur="3.2s" begin="0s" repeatCount="indefinite" path="M280 280 L150 140"/></circle>
+              <circle r="2.6"><animateMotion dur="3.2s" begin="0.7s" repeatCount="indefinite" path="M280 280 L410 140"/></circle>
+              <circle r="2.6"><animateMotion dur="3.2s" begin="1.4s" repeatCount="indefinite" path="M280 280 L455 285"/></circle>
+              <circle r="2.6"><animateMotion dur="3.2s" begin="2.1s" repeatCount="indefinite" path="M280 280 L285 460"/></circle>
+              <circle r="2.6"><animateMotion dur="3.2s" begin="2.8s" repeatCount="indefinite" path="M280 280 L105 285"/></circle>
+            </g>
+            <g class="hex-glow">
+              <polygon points="280,182 364.9,231 364.9,329 280,378 195.1,329 195.1,231" fill="#0c1426" stroke="#f2a53a" stroke-width="1.6"/>
+              <text x="280" y="254" font-family="Sora,'Segoe UI',sans-serif" font-size="12" font-weight="700" letter-spacing="2.2" fill="#f4f6fc" text-anchor="middle">SOLVING</text>
+              <text x="280" y="274" font-family="Sora,'Segoe UI',sans-serif" font-size="12" font-weight="700" letter-spacing="2.2" fill="#f4f6fc" text-anchor="middle">REAL WORLD</text>
+              <text x="280" y="294" font-family="Sora,'Segoe UI',sans-serif" font-size="12" font-weight="700" letter-spacing="2.2" fill="#f4f6fc" text-anchor="middle">PROBLEMS</text>
+              <rect x="262" y="308" width="36" height="3" rx="1.5" fill="#f2a53a"/>
+            </g>
+            <g class="o-node" transform="translate(150,140)">
+              <circle r="38" fill="rgba(242,165,58,.35)" stroke="none"><animate attributeName="r" values="38;56" dur="3s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0" dur="3s" begin="0s" repeatCount="indefinite"/></circle>
+              <circle r="38" fill="#0c1426" stroke="rgba(242,165,58,.65)" stroke-width="1.6"/>
+              <g transform="translate(-12,-12)" stroke="#f2a53a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></g>
+            </g>
+            <g class="o-node" transform="translate(410,140)">
+              <circle r="38" fill="rgba(242,165,58,.35)" stroke="none"><animate attributeName="r" values="38;56" dur="3s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0" dur="3s" begin="0.6s" repeatCount="indefinite"/></circle>
+              <circle r="38" fill="#0c1426" stroke="rgba(242,165,58,.65)" stroke-width="1.6"/>
+              <g transform="translate(-12,-12)" stroke="#f2a53a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></g>
+            </g>
+            <g class="o-node" transform="translate(455,285)">
+              <circle r="38" fill="rgba(242,165,58,.35)" stroke="none"><animate attributeName="r" values="38;56" dur="3s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0" dur="3s" begin="1.2s" repeatCount="indefinite"/></circle>
+              <circle r="38" fill="#0c1426" stroke="rgba(242,165,58,.65)" stroke-width="1.6"/>
+              <g transform="translate(-12,-12)" stroke="#f2a53a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></g>
+            </g>
+            <g class="o-node" transform="translate(285,460)">
+              <circle r="38" fill="rgba(242,165,58,.35)" stroke="none"><animate attributeName="r" values="38;56" dur="3s" begin="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0" dur="3s" begin="1.8s" repeatCount="indefinite"/></circle>
+              <circle r="38" fill="#0c1426" stroke="rgba(242,165,58,.65)" stroke-width="1.6"/>
+              <g transform="translate(-12,-12)" stroke="#f2a53a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></g>
+            </g>
+            <g class="o-node" transform="translate(105,285)">
+              <circle r="38" fill="rgba(242,165,58,.35)" stroke="none"><animate attributeName="r" values="38;56" dur="3s" begin="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0" dur="3s" begin="2.4s" repeatCount="indefinite"/></circle>
+              <circle r="38" fill="#0c1426" stroke="rgba(242,165,58,.65)" stroke-width="1.6"/>
+              <g transform="translate(-12,-12)" stroke="#f2a53a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></g>
+            </g>
+            <g pointer-events="none">
+              <text x="150" y="196" font-family="Sora,'Segoe UI',sans-serif" font-size="14.5" font-weight="700" fill="#f4f6fc" text-anchor="middle">Understand</text>
+              <text x="150" y="214" font-family="Inter,'Segoe UI',sans-serif" font-size="12" font-weight="500" fill="#a8b2cc" text-anchor="middle">Business</text>
+              <text x="410" y="196" font-family="Sora,'Segoe UI',sans-serif" font-size="14.5" font-weight="700" fill="#f4f6fc" text-anchor="middle">Design</text>
+              <text x="410" y="214" font-family="Inter,'Segoe UI',sans-serif" font-size="12" font-weight="500" fill="#a8b2cc" text-anchor="middle">Solutions</text>
+              <text x="455" y="350" font-family="Sora,'Segoe UI',sans-serif" font-size="14.5" font-weight="700" fill="#f4f6fc" text-anchor="middle">Build</text>
+              <text x="455" y="368" font-family="Inter,'Segoe UI',sans-serif" font-size="12" font-weight="500" fill="#a8b2cc" text-anchor="middle">Systems</text>
+              <text x="105" y="350" font-family="Sora,'Segoe UI',sans-serif" font-size="14.5" font-weight="700" fill="#f4f6fc" text-anchor="middle">Analyze</text>
+              <text x="105" y="368" font-family="Inter,'Segoe UI',sans-serif" font-size="12" font-weight="500" fill="#a8b2cc" text-anchor="middle">Processes</text>
+              <text x="285" y="522" font-family="Sora,'Segoe UI',sans-serif" font-size="14.5" font-weight="700" fill="#f4f6fc" text-anchor="middle">Improve</text>
+              <text x="285" y="540" font-family="Inter,'Segoe UI',sans-serif" font-size="12" font-weight="500" fill="#a8b2cc" text-anchor="middle">Continuously</text>
+            </g>
+          </svg>
+
+          <!-- rotating badge -->
+          <div class="spin-badge">
+            <svg class="ring" viewBox="0 0 120 120" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true">
+              <defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+              <text font-family="JetBrains Mono,Consolas,monospace" font-size="9" letter-spacing="2.6" fill="#97a0b4">
+                <textPath href="#circ" xlink:href="#circ">LET'S WORK TOGETHER ✦ OPEN TO REMOTE ✦ </textPath>
+              </text>
+            </svg>
+            <a class="core" href="#contact" aria-label="Go to contact — let's work together">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true"><div class="wheel"></div>scroll</div>
+</section>
+
+<!-- ============================ MARQUEE ============================ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>ODOO <b>✦</b> PYTHON <b>✦</b> POSTGRESQL <b>✦</b> PANDAS <b>✦</b> SEABORN <b>✦</b> OWL FRAMEWORK <b>✦</b> QWEB <b>✦</b> XML <b>✦</b> AUTOMATION <b>✦</b> DATA ANALYSIS <b>✦</b> ERP IMPLEMENTATION <b>✦</b> GIT&nbsp;</span>
+    <span>ODOO <b>✦</b> PYTHON <b>✦</b> POSTGRESQL <b>✦</b> PANDAS <b>✦</b> SEABORN <b>✦</b> OWL FRAMEWORK <b>✦</b> QWEB <b>✦</b> XML <b>✦</b> AUTOMATION <b>✦</b> DATA ANALYSIS <b>✦</b> ERP IMPLEMENTATION <b>✦</b> GIT&nbsp;</span>
+  </div>
+</div>
+
+<!-- ============================ ABOUT ============================ -->
+<section id="about" class="sec-bg">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 mb-5 mb-lg-0">
+        <div class="portrait-wrap wow fadeInUp">
+          <div class="portrait-ring" aria-hidden="true"></div>
+          <div class="portrait">
+            <div class="portrait-mono"><b>NF</b><span>EST. PROBLEM SOLVER</span></div>
+            <img src="images/portrait.jpg" alt="Portrait of Negaye Fikadu" onerror="this.remove()">
+          </div>
+          <span class="portrait-chip pc-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Addis Ababa, Ethiopia</span>
+          <span class="portrait-chip pc-2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Consultant × Developer</span>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <span class="eyebrow wow fadeInUp"><i>//</i> 01 — about me</span>
+        <h2 class="sec-title wow fadeInUp" data-wow-delay=".08s">Engineer by training,<br><span class="grad-text">problem-solver</span> by obsession.</h2>
+        <p class="sec-sub wow fadeInUp" data-wow-delay=".14s">I'm an ERP consultant and developer based in Addis Ababa with 5+ years across the full implementation lifecycle — requirement workshops, workflow mapping, configuration, training and post-go-live support. I've configured finance, supply-chain and HR modules for companies across Ethiopia, led critical reconfigurations, and built custom Odoo modules — including one published on the Odoo App Store.</p>
+        <div class="fact-grid wow fadeInUp" data-wow-delay=".2s">
+          <div class="fact"><b>Email</b><span><a href="mailto:negafika17@gmail.com">negafika17@gmail.com</a></span></div>
+          <div class="fact"><b>Freelance</b><span class="ok">● Available now</span></div>
+          <div class="fact"><b>Languages</b><span>Amharic (native) · English (fluent)</span></div>
+          <div class="fact"><b>Education</b><span>B.Sc Electrical &amp; Computer Eng., AAU</span></div>
+        </div>
+        <div class="hero-stats wow fadeInUp" data-wow-delay=".26s">
+          <div class="hstat"><b class="count-num" data-n="5" data-s="+">0</b><span>Years of experience</span></div>
+          <div class="hstat"><b class="count-num" data-n="5" data-s="">0</b><span>Organizations served</span></div>
+          <div class="hstat"><b class="count-num" data-n="3" data-s="">0</b><span>IBM certifications</span></div>
+        </div>
+        <div class="mt-4 wow fadeInUp" data-wow-delay=".32s">
+          <a class="btn btn-primary magnetic" href="Negaye-Fikadu-CV.pdf" download="Negaye-Fikadu-CV.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICES (BENTO) ============================ -->
+<section id="services">
+  <div class="container">
+    <span class="eyebrow wow fadeInUp"><i>//</i> 02 — what i do</span>
+    <div class="proj-head">
+      <h2 class="sec-title wow fadeInUp" data-wow-delay=".08s">Four disciplines,<br>one <span class="grad-text">obsession.</span></h2>
+      <p class="sec-sub wow fadeInUp" data-wow-delay=".14s" style="max-width:34ch">Systems that actually get used — built on understanding, not assumptions.</p>
+    </div>
+
+    <div class="bento">
+      <article class="bento-card b-ba spot wow fadeInUp" data-modal="svc-ba" role="button" tabindex="0" aria-label="Business Analysis — learn more">
+        <span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+        <h3>Business Analysis</h3>
+        <p>Understanding processes, identifying inefficiencies, gathering requirements, and turning business needs into clear, buildable solutions.</p>
+        <div class="b-extra">
+          <ul class="b-check">
+            <li>Requirement-gathering workshops</li>
+            <li>Process mapping &amp; gap analysis</li>
+          </ul>
+          <span class="b-more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+        </div>
+      </article>
+
+      <article class="bento-card b-erp spot wow fadeInUp" data-wow-delay=".1s" data-modal="svc-erp" role="button" tabindex="0" aria-label="ERP and Odoo — learn more">
+        <span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></span>
+        <h3>ERP &amp; Odoo</h3>
+        <p>Implementing, customizing, and extending Odoo to streamline operations and support business growth — from first workshop to post-go-live.</p>
+        <div class="b-extra">
+          <span class="b-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>Published on the Odoo App Store</span>
+          <span class="b-more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+        </div>
+      </article>
+
+      <article class="bento-card spot wow fadeInUp" data-wow-delay=".16s" data-modal="svc-soft" role="button" tabindex="0" aria-label="Software and Automation — learn more">
+        <span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+        <h3>Software &amp; Automation</h3>
+        <p>Python tools, integrations, and automations that eliminate repetitive work and increase productivity.</p>
+        <div class="b-extra">
+          <div class="b-term"><span class="p">~/</span> python run_report.py <span class="p">→</span> done in 4s ✓</div>
+          <span class="b-more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+        </div>
+      </article>
+
+      <article class="bento-card spot wow fadeInUp" data-wow-delay=".22s" data-modal="svc-data" role="button" tabindex="0" aria-label="Data and Intelligence — learn more">
+        <span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>
+        <h3>Data &amp; Intelligence</h3>
+        <p>Turning data into insight through analysis and visualization — and exploring ML &amp; AI for better decisions.</p>
+        <div class="b-extra">
+          <svg class="b-spark" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true">
+            <polyline points="0,52 20,44 40,48 60,30 80,36 100,20 120,26 140,12 160,18 180,6 200,10" fill="none" stroke="#f2a53a" stroke-width="2.4" stroke-linejoin="round"/>
+            <polyline points="0,58 30,54 60,56 90,46 120,48 150,38 180,40 200,32" fill="none" stroke="#6ea8ff" stroke-width="2" stroke-linejoin="round" opacity=".7"/>
+          </svg>
+          <span class="b-more">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PROCESS ============================ -->
+<section id="process" class="sec-bg">
+  <div class="container">
+    <span class="eyebrow wow fadeInUp"><i>//</i> 03 — the method</span>
+    <h2 class="sec-title wow fadeInUp" data-wow-delay=".08s">How I <span class="grad-text">solve problems.</span></h2>
+    <div class="flow">
+      <div class="flow-step wow fadeInUp"><span class="flow-num">01</span><span class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><h4>Understand</h4><p>the business</p></div>
+      <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      <div class="flow-step wow fadeInUp" data-wow-delay=".06s"><span class="flow-num">02</span><span class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span><h4>Analyze</h4><p>the problem</p></div>
+      <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      <div class="flow-step wow fadeInUp" data-wow-delay=".12s"><span class="flow-num">03</span><span class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg></span><h4>Design</h4><p>the solution</p></div>
+      <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      <div class="flow-step wow fadeInUp" data-wow-delay=".18s"><span class="flow-num">04</span><span class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span><h4>Develop</h4><p>the system</p></div>
+      <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      <div class="flow-step wow fadeInUp" data-wow-delay=".24s"><span class="flow-num">05</span><span class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.53a2 2 0 0 1-.21.9L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45L14.21 10.43a2 2 0 0 1-.21-.9V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg></span><h4>Test</h4><p>thoroughly</p></div>
+      <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      <div class="flow-step wow fadeInUp" data-wow-delay=".3s"><span class="flow-num">06</span><span class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span><h4>Implement</h4><p>successfully</p></div>
+      <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      <div class="flow-step wow fadeInUp" data-wow-delay=".36s"><span class="flow-num">07</span><span class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span><h4>Improve</h4><p>continuously</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SKILLS ============================ -->
+<section id="skills">
+  <div class="container">
+    <span class="eyebrow wow fadeInUp"><i>//</i> 04 — the toolkit</span>
+    <h2 class="sec-title wow fadeInUp" data-wow-delay=".08s">Tools I <span class="grad-text">think in.</span></h2>
+    <div class="row mt-5">
+      <div class="col-lg-5 mb-5 mb-lg-0 pr-lg-5">
+        <div class="skill wow fadeInUp"><div class="skill-head"><b>Odoo (Community &amp; Enterprise)</b><span>95%</span></div><div class="skill-track"><i class="skill-fill" data-p="95"></i></div></div>
+        <div class="skill wow fadeInUp" data-wow-delay=".06s"><div class="skill-head"><b>PostgreSQL</b><span>85%</span></div><div class="skill-track"><i class="skill-fill" data-p="85"></i></div></div>
+        <div class="skill wow fadeInUp" data-wow-delay=".12s"><div class="skill-head"><b>XML &amp; QWeb</b><span>80%</span></div><div class="skill-track"><i class="skill-fill" data-p="80"></i></div></div>
+        <div class="skill wow fadeInUp" data-wow-delay=".18s"><div class="skill-head"><b>Python</b><span>75%</span></div><div class="skill-track"><i class="skill-fill" data-p="75"></i></div></div>
+        <p class="sec-sub wow fadeInUp" data-wow-delay=".24s" style="font-size:.88rem">Percentages are honest self-ratings across production work — not tutorial confidence.</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="legend wow fadeInUp">
+          <span class="l-erp"><i></i>ERP &amp; Functional</span>
+          <span class="l-tech"><i></i>Technical</span>
+          <span class="l-data"><i></i>Data</span>
+        </div>
+        <div class="chip-cloud wow fadeInUp" data-wow-delay=".08s">
+          <span class="t-chip c-erp">Odoo Studio</span>
+          <span class="t-chip c-erp">ERP Implementation</span>
+          <span class="t-chip c-erp">Process Mapping</span>
+          <span class="t-chip c-erp">Requirement Analysis</span>
+          <span class="t-chip c-erp">Training &amp; Documentation</span>
+          <span class="t-chip c-tech">OWL Framework</span>
+          <span class="t-chip c-tech">Data Migration</span>
+          <span class="t-chip c-tech">System Integration</span>
+          <span class="t-chip c-tech">Git &amp; GitHub</span>
+          <span class="t-chip c-tech">REST APIs</span>
+          <span class="t-chip c-data">Pandas</span>
+          <span class="t-chip c-data">Seaborn</span>
+          <span class="t-chip c-data">Matplotlib</span>
+          <span class="t-chip c-data">Jupyter</span>
+          <span class="t-chip c-data">Excel &amp; OpenPyXL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PROJECTS ============================ -->
+<section id="projects" class="sec-bg">
+  <div class="container">
+    <span class="eyebrow wow fadeInUp"><i>//</i> 05 — selected work</span>
+    <div class="proj-head">
+      <h2 class="sec-title wow fadeInUp" data-wow-delay=".08s">Systems that<br><span class="grad-text">shipped &amp; stuck.</span></h2>
+      <div class="filters wow fadeInUp" data-wow-delay=".14s" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="*">All</button>
+        <button class="filter" data-filter=".f-odoo">Odoo &amp; ERP</button>
+        <button class="filter" data-filter=".f-auto">Python &amp; Automation</button>
+        <button class="filter" data-filter=".f-data">Data</button>
+      </div>
+    </div>
+
+    <div id="proj-grid">
+      <div class="proj-item f-odoo">
+        <article class="proj-card spot" data-modal="odoo" role="button" tabindex="0" aria-label="Time Off Accrual Expiry — view case study">
+          <div class="proj-thumb">
+            <span class="proj-cat">Odoo App</span>
+            <img src="images/project-odoo.svg" alt="Time Off Accrual Expiry — Odoo app interface">
+            <div class="proj-veil"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span></div>
+          </div>
+          <div class="proj-body">
+            <h3>Time Off Accrual Expiry</h3>
+            <p>An Odoo extension to track and report expired accrual leave with full historical visibility.</p>
+            <div class="b-tags"><span class="b-tag">Odoo</span><span class="b-tag">Python</span><span class="b-tag">ORM</span><span class="b-tag">OWL</span><span class="b-tag">PostgreSQL</span></div>
+            <div class="proj-foot mt-3">
+              <span class="proj-link">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              <a class="proj-metric proj-store-link" href="https://apps.odoo.com/apps/modules/17.0/hr_leave_accrual_expiry/" target="_blank" rel="noopener" title="View on the Odoo App Store">✓ on Odoo App Store ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj-item f-auto">
+        <article class="proj-card spot" data-modal="auto" role="button" tabindex="0" aria-label="Business Automation Tool — view case study">
+          <div class="proj-thumb">
+            <span class="proj-cat">Automation</span>
+            <img src="images/project-automation.svg" alt="Business automation tool interface">
+            <div class="proj-veil"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span></div>
+          </div>
+          <div class="proj-body">
+            <h3>Business Automation Tool</h3>
+            <p>Automated Excel reporting and data processing to reduce manual work by 80%.</p>
+            <div class="b-tags"><span class="b-tag">Python</span><span class="b-tag">Pandas</span><span class="b-tag">OpenPyXL</span><span class="b-tag">Automation</span></div>
+            <div class="proj-foot mt-3">
+              <span class="proj-link">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              <span class="proj-metric">−80% manual work</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj-item f-data">
+        <article class="proj-card spot" data-modal="sales" role="button" tabindex="0" aria-label="Sales Data Analysis — view case study">
+          <div class="proj-thumb">
+            <span class="proj-cat">Data Analysis</span>
+            <img src="images/project-sales.svg" alt="Sales data analysis dashboard">
+            <div class="proj-veil"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span></div>
+          </div>
+          <div class="proj-body">
+            <h3>Sales Data Analysis</h3>
+            <p>Data analysis and visualization project to uncover patterns and support business decisions.</p>
+            <div class="b-tags"><span class="b-tag">Python</span><span class="b-tag">Pandas</span><span class="b-tag">Seaborn</span><span class="b-tag">Jupyter</span></div>
+            <div class="proj-foot mt-3">
+              <span class="proj-link">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              <span class="proj-metric">Seasonality found</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj-item f-odoo">
+        <article class="proj-card spot" data-modal="retail" role="button" tabindex="0" aria-label="Retail Distribution ERP Rollout — view case study">
+          <div class="proj-body" style="padding:28px">
+            <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></span>
+            <h3>Retail Distribution ERP Rollout</h3>
+            <p>End-to-end implementation: workshops, inventory &amp; sales configuration, warehouse mapping, staged go-live.</p>
+            <div class="b-tags"><span class="b-tag">ERP</span><span class="b-tag">Supply Chain</span><span class="b-tag">Odoo</span></div>
+            <div class="proj-foot mt-3">
+              <span class="proj-link">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              <span class="proj-metric">40+ trained</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj-item f-odoo">
+        <article class="proj-card spot" data-modal="finance" role="button" tabindex="0" aria-label="Finance Module Configuration — view case study">
+          <div class="proj-body" style="padding:28px">
+            <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>
+            <h3>Finance Module Configuration</h3>
+            <p>Chart of accounts, invoicing, payments and month-end close aligned with Ethiopian accounting practice.</p>
+            <div class="b-tags"><span class="b-tag">Finance</span><span class="b-tag">Configuration</span><span class="b-tag">Reporting</span></div>
+            <div class="proj-foot mt-3">
+              <span class="proj-link">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              <span class="proj-metric">~50% faster close</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj-item f-auto">
+        <article class="proj-card spot" data-modal="migration" role="button" tabindex="0" aria-label="Data Migration and Integrations — view case study">
+          <div class="proj-body" style="padding:28px">
+            <span class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><polyline points="21 3 21 9 15 9"/></svg></span>
+            <h3>Data Migration &amp; Integrations</h3>
+            <p>Legacy data into Odoo plus third-party and payment-gateway integrations — with validation at every step.</p>
+            <div class="b-tags"><span class="b-tag">Integration</span><span class="b-tag">Data Migration</span><span class="b-tag">APIs</span></div>
+            <div class="proj-foot mt-3">
+              <span class="proj-link">Case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              <span class="proj-metric">0 integrity loss</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ EXPERIENCE ============================ -->
+<section id="experience">
+  <div class="container">
+    <span class="eyebrow wow fadeInUp"><i>//</i> 06 — the journey</span>
+    <h2 class="sec-title wow fadeInUp" data-wow-delay=".08s">Where I've <span class="grad-text">been.</span></h2>
+    <div class="row mt-2">
+      <div class="col-lg-8">
+        <div class="timeline">
+          <div class="t-item wow fadeInUp"><span class="t-date">Mar 2026<br>— Present</span><span class="t-role">Functional Consultant</span><span class="t-org">Addissystems PLC</span><p>Leading requirement workshops, mapping workflows to Odoo and configuring finance, supply chain and HR modules — primary liaison between clients and developers.</p></div>
+          <div class="t-item wow fadeInUp" data-wow-delay=".05s"><span class="t-date">Sep 2025<br>— Mar 2026</span><span class="t-role">Consultant</span><span class="t-org">Edomias International PLC</span><p>Oversaw a critical system configuration update: analyzed the setup, identified inefficiencies and executed a seamless reconfiguration, with tailored training for every team.</p></div>
+          <div class="t-item wow fadeInUp" data-wow-delay=".1s"><span class="t-date">Jan 2025<br>— Aug 2025</span><span class="t-role">ERP Implementer</span><span class="t-org">Ashewa Technology Solution S.C.</span><p>Analyzed business requirements, configured and customized ERP modules, integrated third-party systems, migrated data and ensured smooth implementation.</p></div>
+          <div class="t-item wow fadeInUp" data-wow-delay=".15s"><span class="t-date">Nov 2023<br>— Jan 2025</span><span class="t-role">Associate Functional Consultant</span><span class="t-org">Red Cloud ICT Solutions</span><p>Supported ERP implementations end to end — configuration, testing, documentation and user enablement across multiple client engagements.</p></div>
+          <div class="t-item wow fadeInUp" data-wow-delay=".2s"><span class="t-date">Nov 2022<br>— Oct 2024</span><span class="t-role">Assistant Functional Consultant</span><span class="t-org">CNET Software Technologies PLC</span><p>Configured workflows and reports, supported data-migration efforts and helped resolve functional issues during go-live phases.</p></div>
+          <div class="t-item wow fadeInUp" data-wow-delay=".25s"><span class="t-date">Oct 2021<br>— Oct 2022</span><span class="t-role">Junior Functional Consultant</span><span class="t-org">CNET Software Technologies PLC</span><p>Started my ERP career gathering requirements, preparing documentation and assisting senior consultants with module configuration and testing.</p></div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-5 mt-lg-0">
+        <div class="side-card wow fadeInUp" data-wow-delay=".1s">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Education</h4>
+          <div class="s-item"><b>B.Sc Electrical &amp; Computer Engineering</b><span>Addis Ababa University — Ethiopia</span></div>
+          <div class="s-item"><b>Engineering foundation</b><span>Systems, electronics &amp; computing behind my analytical approach</span></div>
+        </div>
+        <div class="side-card wow fadeInUp" data-wow-delay=".18s">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 15 8.7l7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21.3l1.4-7L2 9.5l7-.8Z"/></svg>Certifications</h4>
+          <div class="s-item"><b>Applied Data Science Specialization</b><span>IBM / Coursera — nine courses</span></div>
+          <div class="s-item"><b>Applied Data Science Capstone</b><span>IBM / Coursera</span></div>
+          <div class="s-item"><b>Data Analysis Fundamentals</b><span>IBM / Coursera</span></div>
+        </div>
+        <a class="store-badge mt-4 wow fadeInUp" data-wow-delay=".26s" href="https://apps.odoo.com/apps/modules/17.0/hr_leave_accrual_expiry/" target="_blank" rel="noopener" title="View on the Odoo App Store">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>
+          <div><b>Published on the Odoo App Store ↗</b><span>Time Off Accrual Expiry — 2026</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ORGS ============================ -->
+<section class="sec-bg" style="padding:54px 0" aria-label="Trusted by organizations">
+  <div class="container">
+    <div class="orgs wow fadeInUp">
+      <span class="orgs-more">// trusted by</span>
+      <span class="org"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M8 17V8h6"/><path d="M8 12.5h5"/></svg>Lampros</span>
+      <span class="org"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg>TradeEthiopia</span>
+      <span class="org"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 21 19.5H3Z"/><path d="M9.3 14.5h5.4"/></svg>Addissystems</span>
+      <span class="org"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 8H9.5v8H15"/><path d="M9.5 12H14"/></svg>Edomias</span>
+      <span class="orgs-more">and more…</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ BEYOND / NOTES ============================ -->
+<section id="notes" class="sec-bg">
+  <div class="container">
+    <div class="beyond wow fadeInUp">
+      <span class="beyond-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+      <div class="beyond-txt">
+        <span class="eyebrow"><i>//</i> 07 — beyond work</span>
+        <h3 class="mt-2">Naturally curious, <span class="grad-text">on purpose.</span></h3>
+        <p>I spend my free time exploring questions in mathematics, physics, psychology, philosophy, and the nature of intelligence — and I'm turning that exploration into a set of written notes.</p>
+        <div class="topic-chips">
+          <span class="topic-chip">∑ Mathematics</span>
+          <span class="topic-chip">⚛ Physics</span>
+          <span class="topic-chip">◉ Psychology</span>
+          <span class="topic-chip">λ Philosophy</span>
+          <span class="topic-chip">✦ Intelligence</span>
+        </div>
+      </div>
+      <button class="btn btn-ghost magnetic" data-modal="svc-notes">Explore My Notes
+        <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap wow fadeInUp">
+      <div class="row">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <span class="eyebrow"><i>//</i> 08 — let's talk</span>
+          <h2 class="contact-big mt-3">Have a problem<br><span class="grad-text">worth solving?</span></h2>
+          <p class="sec-sub">Tell me about your process, your system, or the spreadsheet that's slowly eating your team. I usually reply within a day.</p>
+          <div class="c-info">
+            <a class="c-row c-row-mail" href="mailto:negafika17@gmail.com?subject=Portfolio%20inquiry" title="Email me — opens your mail app">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+              <div><b>Email</b><span>negafika17@gmail.com</span></div>
+              <span class="c-actions">
+                <button type="button" class="c-act js-gmail" data-to="negafika17@gmail.com" title="Open compose in Gmail (works in any browser)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Gmail
+                </button>
+                <button type="button" class="c-act js-copy" data-copy="negafika17@gmail.com" title="Copy email address">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  Copy
+                </button>
+              </span>
+            </a>
+            <a class="c-row c-row-tel" href="tel:+251945938679" title="Call me — opens your phone dialer">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <div><b>Phone</b><span>+251 94 593 8679</span></div>
+              <span class="c-actions">
+                <button type="button" class="c-act js-wa" data-wa="251945938679" title="Chat on WhatsApp">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                  WhatsApp
+                </button>
+                <button type="button" class="c-act js-copy" data-copy="+251 94 593 8679" title="Copy phone number">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  Copy
+                </button>
+              </span>
+            </a>
+            <div class="c-row">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div><b>Location</b><span>Addis Ababa, Ethiopia</span></div>
+            </div>
+            <div class="c-row">
+              <span class="ci" style="color:var(--green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16 9.5"/></svg></span>
+              <div><b>Status</b><span class="ok">Open to remote opportunities</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div id="cf-root">
+          <!-- Static fallback shown only if the React island cannot load -->
+          <form class="form-card" id="contact-form" novalidate>
+            <div class="form-alert" id="form-alert" role="status">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16 9.5"/></svg>
+              <span></span>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="f-group" id="fg-name">
+                  <input type="text" id="cf-name" placeholder=" " autocomplete="name">
+                  <label for="cf-name">Your name</label>
+                  <div class="f-msg">Please tell me your name.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="f-group" id="fg-email">
+                  <input type="email" id="cf-email" placeholder=" " autocomplete="email">
+                  <label for="cf-email">Email address</label>
+                  <div class="f-msg">A valid email helps me reply.</div>
+                </div>
+              </div>
+            </div>
+            <div class="f-group">
+              <input type="text" id="cf-subject" placeholder=" ">
+              <label for="cf-subject">Subject (optional)</label>
+            </div>
+            <div class="f-group" id="fg-msg">
+              <textarea id="cf-msg" placeholder=" "></textarea>
+              <label for="cf-msg">Tell me about your project or problem…</label>
+              <div class="f-msg">A few more words would help (10+ characters).</div>
+            </div>
+            <!-- Honeypot: invisible to humans, bots fill it and get silently dropped -->
+            <input type="text" class="hp-field" name="website" id="cf-website" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" class="btn btn-primary btn-block magnetic">Send Message
+              <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-note">Messages are delivered straight to my inbox (stored securely on the server) — or write me directly at <a href="mailto:negafika17@gmail.com">negafika17@gmail.com</a></p>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <a class="brand" href="#home">
+          <svg class="brand-badge" viewBox="0 0 44 44" aria-hidden="true"><rect x="2" y="2" width="40" height="40" rx="10" fill="none" stroke="#f2a53a" stroke-width="2.5"/><text x="22" y="28.5" text-anchor="middle" font-family="Sora,Segoe UI,Arial" font-size="15" font-weight="800" fill="#f2a53a">NF</text></svg>
+          <span><span class="brand-name">NEGAYE <b>FIKADU</b></span><span class="brand-sub">SYSTEMS PROBLEM SOLVER</span></span>
+        </a>
+        <p class="f-tag">Building practical systems. Solving real problems. Based in Addis Ababa, working everywhere.</p>
+        <div class="f-social">
+          <a href="https://github.com/negafika" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="https://www.linkedin.com/in/negaye-fikadu/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=negafika17@gmail.com&su=Portfolio%20inquiry" target="_blank" rel="noopener" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5 class="f-title">Navigate</h5>
+        <a class="f-link" href="#services">What I Do</a>
+        <a class="f-link" href="#projects">Projects</a>
+        <a class="f-link" href="#about">About Me</a>
+        <a class="f-link" href="#notes">Blog</a>
+        <a class="f-link" href="#contact">Contact</a>
+      </div>
+      <div>
+        <h5 class="f-title">Resume</h5>
+        <p class="f-resume">A quick overview of my experience, skills and certifications — one page, PDF.</p>
+        <a class="btn btn-primary btn-sm magnetic" href="Negaye-Fikadu-CV.pdf" download="Negaye-Fikadu-CV.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download PDF
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="watermark" aria-hidden="true">NEGAYE&nbsp;FIKADU</div>
+  <div class="container">
+    <div class="f-bottom">
+      <span>© <span id="year">2026</span> Negaye Fikadu. All rights reserved.</span>
+      <span>Built with <span class="heart">♥</span> and lots of curiosity</span>
+    </div>
+  </div>
+</footer>
+
+<button id="to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<!-- Modal -->
+<div class="modal-ov" id="modal-ov" role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="modal">
+    <button class="modal-x" id="modal-close" aria-label="Close dialog">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/typer.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/theme.js?v=26.15"></script>
+<!-- Analytics: sign up free at goatcounter.com, then replace "your-code" below and remove this comment -->
+<!-- <script data-goatcounter="https://your-code.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+</body>
+</html>

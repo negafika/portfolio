@@ -1,0 +1,2 @@
+# No third-party Python dependencies — the server runs on the standard library only.
+# (React is pre-built into js/react/islands.js; no build step needed at deploy time.)
